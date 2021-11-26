@@ -1,0 +1,15 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  background-image: url('../media/register2.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+label{
+  font-size: 1em;
+  font-weight: 600;
+}

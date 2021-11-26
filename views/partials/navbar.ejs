@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/home">FarmCare</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="collapse navbar-collapse justify-content-end"
+      id="navbarNavAltMarkup"
+    >
+      <div class="navbar-nav">
+        <a class="nav-link me-5" href="/farms"
+          >Home <span class="material-icons">home</span></a
+        >
+        <% if(!currentUser){ %>
+        <a class="nav-link me-5" href="/login"
+          >Login <span class="material-icons">login</span></a
+        >
+        <a class="nav-link me-5" href="/register">Register</a>
+        <%} else{ %>
+        <a href="/cart" class="nav-link me-5"
+          >CART <span class="material-icons">shopping_cart</span></a
+        >
+        <a class="nav-link me-5" href="/dashboard"
+          >Dashboard<span class="material-icons">space_dashboard</span></a
+        >
+        <a class="nav-link me-5" href="/reviews"
+          >Community <span class="material-icons">rate_review</span></a
+        >
+        <a class="nav-link me-5" href="/logout"
+          >Logout <span class="material-icons">logout</span></a
+        >
+        <% } %>
+      </div>
+    </div>
+  </div>
+</nav>
