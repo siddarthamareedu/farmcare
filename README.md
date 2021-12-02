@@ -35,7 +35,7 @@ After installing these, clone this repository, go to the folder. Open terminal o
 
 * Clone the repo
 ```
-git clone https://github.com/Dhruv-Cyber3/Farmery.git
+git clone https://github.com/siddarthamareedu/farmcare
 ```
 
 * Install npm packages
