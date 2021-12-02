@@ -255,8 +255,8 @@ app.get("/farms/:id/products/new", isLoggedin, isAuthor, async (req, res) => {
 app.post("/farms/:id/products", isLoggedin, isAuthor, async (req, res) => {
   const { id } = req.params;
   const farm = await Farm.findById(id);
-  const { name, price, category } = req.body;
-  const product = new Product({ name, price, category });
+  const { name, price, category,productImageUrl } = req.body;
+  const product = new Product({ name, price, category,productImageUrl});
   farm.products.push(product);
   product.farm = farm;
   product.author = req.user._id;

@@ -24,6 +24,10 @@ const productSchema = new Schema({
     type: Schema.Types.ObjectId,
     ref: "Farm",
   },
+  productImageUrl: {
+    type: String,
+    required: true,
+  },
 });
 
 const Product = mongoose.model("Product", productSchema);
