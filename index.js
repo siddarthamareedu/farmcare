@@ -36,7 +36,7 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
 mongoose
-  .connect("mongodb://localhost:27017/farmDB", {
+  .connect("mongodb+srv://shashank:9944@farmcare.wbrrq.mongodb.net/farmDB?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
