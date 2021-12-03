@@ -65,6 +65,10 @@ app.use((req, res, next) => {
 
 //Client side routes
 //START
+app.get("/", (req, res) => {
+  res.redirect("/home");
+});
+
 app.get("/home", (req, res) => {
   res.render("customer/index");
 });
